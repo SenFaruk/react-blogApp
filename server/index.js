@@ -21,9 +21,6 @@ app.get("/", (req, res) => {
 
 const PORT = process.env.PORT || 5000;
 
-const CONNECTION_URL =
-  "mongodb+srv://senfaruk:admin1234@cluster0.q8egj.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
-
 mongoose
   .connect(process.env.CONNECTION_URL, {
     useNewUrlParser: true,
